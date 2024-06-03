@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Form to accept four numbers from the user -->
+    <form id="multiplicationForm">
+        <div class="form-group">
+            <label for="minColumnValue">Minimum Column Value:</label>
+            <input type="text" id="minColumnValue" name="minColumnValue" required>
+        </div>
+        <div class="form-group">
+            <label for="maxColumnValue">Maximum Column Value:</label>
+            <input type="text" id="maxColumnValue" name="maxColumnValue" required>
+        </div>
+        <div class="form-group">
+            <label for="minRowValue">Minimum Row Value:</label>
+            <input type="text" id="minRowValue" name="minRowValue" required>
+        </div>
+        <div class="form-group">
+            <label for="maxRowValue">Maximum Row Value:</label>
+            <input type="text" id="maxRowValue" name="maxRowValue" required>
+        </div>
+        <button type="submit">Generate Table</button>
+    </form>
+
+    <!-- Container to hold the generated table -->
+    <div id="tableContainer"></div>
+    <!-- Container to display error messages -->
+    <div id="errorMessage" class="error"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
